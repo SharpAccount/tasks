@@ -107,7 +107,7 @@ function findMax() {
 }
 console.log(findMax());
 function init() {
-    const id = example.find((shop) => shop.id === 5).id - 1;
+    const id = example.findIndex((shop) => shop.id === 5);
     example[id].products = example[id].products.map((product) => product.price * 0.8);
     console.log(example[id]);
 }
